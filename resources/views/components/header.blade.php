@@ -24,7 +24,7 @@
             justify-content: space-between;
         }
         #right a{
-            margin-left: 30%;
+            margin-left: 25%;
             text-decoration: none;
         }
        
@@ -35,8 +35,8 @@
         </div>
         <div id="right">
            
-            <a class="text-success fw-bold" href="mailto:support@corbettcarbooking.com"><i class="fas fa-envelope"></i>&nbsp;Mail Us</a>
-            <a class="text-success fw-bold" href="tel:11111111111"><i class="fas fa-phone"></i>&nbsp;24*7</a>
+            <a class="text-success fw-bold" href="mailto:Adinni08@student.ub.ac.id"><i class="fas fa-envelope"></i>&nbsp;Mail Us</a>
+            <a class="text-success fw-bold" href="tel:08993659998"><i class="fas fa-phone"></i>&nbsp;Call us</a>
            
         </div>
     </div>

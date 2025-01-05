@@ -2,21 +2,40 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use Spatie\Permission\Models\Role;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
+    public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Membuat peran jika belum ada
+        if (!Role::where('name', 'Admin')->exists()) {
+            Role::create(['name' => 'Admin', 'guard_name' => 'web']);
+        }
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        if (!Role::where('name', 'Approver')->exists()) {
+            Role::create(['name' => 'Approver', 'guard_name' => 'web']);
+        }
+
+        // Membuat pengguna jika belum ada
+        $admin = User::firstOrCreate(
+            ['email' => 'admin@example.com'],
+            [
+                'name' => 'Admin User',
+                'password' => bcrypt('password'),
+            ]
+        );
+        $admin->assignRole('Admin');
+
+        $approver = User::firstOrCreate(
+            ['email' => 'approver@example.com'],
+            [
+                'name' => 'Approver User',
+                'password' => bcrypt('password'),
+            ]
+        );
+        $approver->assignRole('Approver');
     }
 }

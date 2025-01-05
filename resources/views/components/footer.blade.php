@@ -34,8 +34,7 @@
                         {{--By default hide but when successfully subscribe it show and after some time again hide--}}
                         <div id="successMessage" class="text-danger fw-bold" style="display: none;">Thank You for Subscribing</div>
                         <div class="text-center p-3">
-                            &copy; Jan-2024 to {{ date('d-m-Y') }}
-                            <p>Corbett Cab Booking</p>
+                            &copy;Adinni Salsabillah</p>
                             <a class="text-dark fw-bold" href="{{route('signin')}}">Admin Login</a>
                           
                     </div>

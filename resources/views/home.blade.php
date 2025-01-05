@@ -110,8 +110,8 @@
     </div>
     
     <div class="heading">
-    <h1>Explore Wildlife Safaris with Ease!</h1>
-    <p>Embark on unforgettable wildlife safaris with our Corbett car booking service. Our expert drivers ensure seamless navigation through the wilderness, while our customizable packages cater to every adventure. With a diverse fleet of vehicles and knowledgeable guides, prioritize safety and comfort as you explore Corbett's majestic landscapes and wildlife treasures.</p>
+    <h1>Tambang Timah</h1>
+    <p>ebuah perusahaan tambang nikel berlokasi di beberapa daerah (region), satu kantor pusat, satu kantor cabang dan memiliki enam tambang dengan lokasi yang berbeda. Perusahaan tersebut mempunyai banyak kendaraan dengan jenis kendaraan angkutan orang dan angkutan barang. Selain kendaraan milik perusahaan, ada juga kendaraan yang disewa dari perusahaan persewaan.</p>
     </div>
   <div class="container1">
        @forelse ($countrow as $record)

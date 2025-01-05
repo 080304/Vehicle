@@ -30,6 +30,10 @@ Route::get('/success', [StripeController::class, 'success'])->name('success');
 //Route::get('cancel', [StripeController::class, 'cancel'])->name('cancel');
 Route::get('/refund/{payment_intent?}/{amount?}',[StripeController::class,'refund'])->name('refund');
 
+Route::middleware(['role:Approver'])->group(function () {
+    Route::get('/approver/approval', [ApproverController::class, 'approval']);
+});
+
 //Vehicle booking without payment
 //Route::post('/vehicledetail',[usercontroller::class,'vehicle_booking'])->name('vehicle_booking');
 //display booking 
@@ -80,7 +84,10 @@ Route::group(['prefix'=>'/admin'],function(){
 
     Route::get('/subscriber',[admincontroller::class,'subscriber'])->name('subscriber');
     Route::get('/subscriberdelete/{id?}',[admincontroller::class,'subscriberdelete'])->name('subscriberdelete');
-
+    Route::middleware(['role:Admin'])->group(function () {
+        Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);
+    });
+    
 
     });
         
