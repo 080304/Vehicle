@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vehicle Booking Web Application
 
 ## Tags
@@ -112,3 +113,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Booking Page Large Screen](https://github.com/Subodhdhyani/Vehicle-Booking-Web-Application/assets/84286795/df4ac135-c02a-4e58-a6e7-df577569d482)
 - [Admin Dashboard Small Screen](https://github.com/Subodhdhyani/Vehicle-Booking-Web-Application/assets/84286795/7e7024d1-02fa-4101-9b73-0cd5879fe007)
 - [Admin Dashboard Large Screen](https://github.com/Subodhdhyani/Vehicle-Booking-Web-Application/assets/84286795/cb2d9a86-bced-4186-9e80-75ed99774abd)
+=======
+# Vehicle
+>>>>>>> b5b3f35837c55548bf1e94f35cb58aa1a3432dc4
